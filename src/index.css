@@ -1,0 +1,46 @@
+:root {
+  --gb: rgba(255,255,255,0.07);
+  --gbr: rgba(255,255,255,0.16);
+  --gh: rgba(255,255,255,0.22);
+  --gs: rgba(0,0,0,0.28);
+  --tp: rgba(255,255,255,0.95);
+  --ts: rgba(255,255,255,0.58);
+  --tm: rgba(255,255,255,0.32);
+  --blue: #0a84ff;
+  --teal: #30d882;
+  --purple: #af52de;
+  --orange: #ff9500;
+  --red: #ff3b30;
+  --indigo: #5e5ce6;
+  --gold: #d4a847;
+  --gold2: #f0c96a;
+  --gold-dim: rgba(212,168,71,0.14);
+  --green: #4caf82;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #06060f;
+  min-height: 100vh;
+  color: var(--tp);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+
+button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
+input, select { font-family: 'DM Sans', sans-serif; }
+
+@keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.35; } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes of1 { to { transform: translate(40px,30px) scale(1.12); } }
+@keyframes of2 { to { transform: translate(-30px,40px) scale(1.08); } }
+@keyframes of3 { to { transform: translate(20px,-40px) scale(1.15); } }
+@keyframes of4 { to { transform: translate(-40px,-20px) scale(1.1); } }
+@keyframes fadeInUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+@keyframes slideIn { from { opacity:0; transform:translateX(-12px); } to { opacity:1; transform:translateX(0); } }
